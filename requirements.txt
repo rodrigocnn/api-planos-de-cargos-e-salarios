@@ -1,0 +1,7 @@
+## Areas da Empresa
+ [x] Não deve cadastradar uma area com mesmo nome já existente na base de dados
+ [x] deve ser possivel listar todas as areas da empresa cadastradas
+ [ ] Deve ser possivel atualizar o nome de uma area da Empresa
+ [ ] Deve ser possivel buscar uma area pelo id
+ [x] Deve ser possivel deleatar uma area da Empresa
+
