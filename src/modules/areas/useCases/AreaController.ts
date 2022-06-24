@@ -22,7 +22,7 @@ export class AreaController{
     } 
     
     async create(request: Request, response: Response): Promise<Response>{
-        const { title, observations} = request.body
+        const { title, observations } = request.body
         const createAreaUseCase = container.resolve(CreateAreaUseCase)
         const result =  await createAreaUseCase.execute({title, observations})
         return response.json(result)
@@ -30,7 +30,7 @@ export class AreaController{
 
     async update(request: Request, response: Response): Promise<Response>{
         const id = request.params.id
-        const { title, observations} = request.body
+        const { title, observations } = request.body
         const updateAreaUseCase = container.resolve(UpdateAreaUseCase)
         const result =  await updateAreaUseCase.execute({id,title,observations})
         return response.json(result)

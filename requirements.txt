@@ -1,7 +1,28 @@
 ## Areas da Empresa
- [x] Não deve cadastradar uma area com mesmo nome já existente na base de dados
- [x] deve ser possivel listar todas as areas da empresa cadastradas
- [ ] Deve ser possivel atualizar o nome de uma area da Empresa
- [ ] Deve ser possivel buscar uma area pelo id
- [x] Deve ser possivel deleatar uma area da Empresa
+[x] Não deve cadastradar uma area com mesmo nome já existente na base de dados
+[x] deve ser possivel listar todas as areas da empresa cadastradas
+[x] Deve ser possivel buscar uma area pelo id
+[x] Deve ser possivel deletar uma area da Empresa
+[x] Deve ser possivel atualizar o nome de uma area da Empresa
 
+## Grupos da Empresa
+
+[x] Não deve ser possivel cadastradar um grupo com mesmo nome já existente na base de dados
+[x] deve ser possivel listar todas os grupos da empresa cadastradas
+[x] Deve ser possivel buscar um grupo pelo id
+[x] Deve ser possivel deletar um grupo da Empresa
+[x] Deve ser possivel atualizar o nome de um grupo da Empresa
+
+## Cargos da Empresa
+
+[x] Deve ser possivel cadastrar um cargo com os seguintes informações (nome do cargo, area , grupo, observaççoes)
+[x] deve ser possivel listar todas os cargos da empresa cadastradas
+[x] Deve ser possivel buscar uma cargo pelo id
+[x] Deve ser possivel deletar um cargo da Empresa
+[x] Deve ser possivel atualizar o nome de uma cargo da Empresa
+
+## Salarios
+
+[ ] Deve ser possivel cadastrar  5 faixas de salario associadas a um cargo já cadastrado na base de dados
+
+## Funcionários
