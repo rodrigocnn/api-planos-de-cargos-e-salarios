@@ -5,6 +5,8 @@ import { GroupsRepository } from '../../modules/groups/repositories/GroupsReposi
 import { IGroupsRepository } from '../../modules/groups/repositories/IGroupsRepository'
 import { IPositionsRepository } from '../../modules/positions/repositories/IPositionsRepository'
 import { PositionsRepository } from '../../modules/positions/repositories/PositionsRepository'
+import { ISalaryRepository } from '../../modules/salary/repositories/ISalaryRepository'
+import { SalaryRepository } from '../../modules/salary/repositories/SalaryRepository'
 
 container.registerSingleton<IAreasRepository>(
     "AreasRepository", 
@@ -17,3 +19,7 @@ container.registerSingleton<IGroupsRepository>(
 container.registerSingleton<IPositionsRepository>(
     "PositionsRepository", 
     PositionsRepository)
+
+container.registerSingleton<ISalaryRepository>(
+    "SalaryRepository", 
+    SalaryRepository)

@@ -5,8 +5,8 @@ yarn typeorm migration:create src/config/database/typeorm/migrations/CreateAreas
 
 ## RODAR MIGRATIONS
 
-
+yarn typeorm migration:run -d  src/config/database/typeorm/index.ts
 
 ## REVERTAR MIGRATIONS
 
-yarn typeorm migration:revert -d  
+yarn typeorm migration:revert -d  src/config/database/typeorm/index.ts

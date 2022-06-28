@@ -23,6 +23,8 @@
 
 ## Salarios
 
-[ ] Deve ser possivel cadastrar  5 faixas de salario associadas a um cargo já cadastrado na base de dados
+[x] Deve ser possivel cadastrar  5 faixas de salario associadas a um cargo já cadastrado na base de dados
+[x] Deve ser possivel cadastrar de faixas de salarios para mais de 1 cargo
+[ ] Deve ser possivel atualizar um ou mais salarios de um determinado cargo
 
 ## Funcionários

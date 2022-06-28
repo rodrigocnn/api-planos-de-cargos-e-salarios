@@ -2,6 +2,7 @@ import { Router } from "express"
 import { AreaController } from "./modules/areas/useCases/AreaController"
 import { GroupController } from "./modules/groups/useCases/GroupController"
 import { PositionController } from "./modules/positions/useCases/PositionController"
+import { SalaryController } from "./modules/salary/useCases/SalaryController"
 
 const routes = Router()
 
@@ -30,5 +31,10 @@ routes.get("/positions/:info", positionController.show )
 routes.post("/positions/", positionController.create )
 routes.post("/positions/delete/", positionController.delete )
 routes.put("/positions/:id", positionController.update )
+
+// SALARY
+
+const salaryController = new SalaryController()
+routes.post("/salary/",salaryController.create )
 
 export { routes }
