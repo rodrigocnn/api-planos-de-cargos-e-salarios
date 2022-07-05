@@ -7,7 +7,7 @@ interface ISalaryRepository{
     //index():Promise<Position[]>
     //show(info: string):Promise<any>
     create({positionId, rangeOne, rangeTwo, rangeThree , rangeFour, rangeFive}: ICreateSalaryDTO): Promise<void>
-    //update({id, title, observations}: IUpdatePositionDTO): Promise<Position | null>
+    update({id, positionId, rangeOne, rangeTwo, rangeThree , rangeFour, rangeFive}: IUpdatePositionDTO): Promise<Salary| null>
     //destroy(id: string):Promise<any>
     findByPosition(id:string):Promise<Salary | null>
 }

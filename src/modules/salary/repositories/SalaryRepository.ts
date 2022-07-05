@@ -14,6 +14,10 @@ export class SalaryRepository implements ISalaryRepository {
   constructor() {
     this.repository = dataSource.getRepository(Salary)
   }
+  async update({ id, positionId, rangeOne, rangeTwo, rangeThree, rangeFour, rangeFive }: IUpdatePositionDTO): Promise<Salary | null> {
+    await this.repository.update(id, { positionId, rangeOne, rangeTwo, rangeThree, rangeFour, rangeFive})
+    return await this.repository.findOneBy({ id });
+  }
 
   async index(): Promise<Salary[]> {
     const result = this.repository.find()

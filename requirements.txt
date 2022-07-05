@@ -25,6 +25,10 @@
 
 [x] Deve ser possivel cadastrar  5 faixas de salario associadas a um cargo já cadastrado na base de dados
 [x] Deve ser possivel cadastrar de faixas de salarios para mais de 1 cargo
-[ ] Deve ser possivel atualizar um ou mais salarios de um determinado cargo
+[x] Deve ser possivel atualizar um ou mais salarios de um determinado cargo
+[ ] Não deve ser possível atualizar  um ou mais salarios de um determinado cargo de um id inexistente
 
 ## Funcionários
+
+[x] Deve ser possivel cadastrar um func com as seguintes informações: nome, cargo inicial,
+ faixa salarial, salario bruto, tipo de contrato (CLT, PJ), cargo atual

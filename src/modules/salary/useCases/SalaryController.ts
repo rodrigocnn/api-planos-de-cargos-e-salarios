@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { container } from "tsyringe";
 import {  CreateSalaryUseCase } from "./CreateSalaryUseCase";
+import { UpdateSalaryUseCase } from "./UpdateSalaryUseCase";
 
 
 export class SalaryController{
@@ -29,18 +30,17 @@ export class SalaryController{
         } catch (error) {
             return response.json(error)
         }
-        
+
     }  
-/*
 
      async update(request: Request, response: Response): Promise<Response>{
         const id = request.params.id
-        const { title, observations, areaId, groupId } = request.body
-        const updateAreaUseCase = container.resolve(UpdatePositionUseCase)
-        const result =  await updateAreaUseCase.execute({id,title,observations, areaId, groupId})
+        const { positionId, rangeOne, rangeTwo, rangeThree , rangeFour, rangeFive } = request.body
+        const updateSalaryUseCase = container.resolve(UpdateSalaryUseCase)
+        const result =  await updateSalaryUseCase.execute({id,positionId, rangeOne, rangeTwo, rangeThree , rangeFour, rangeFive})
         return response.json(result)
     }  
-    
+    /*
     async delete(request: Request, response: Response): Promise<Response>{
         const { id } = request.body
         const deletePositionUseCase = container.resolve(DeletePositionUseCase)

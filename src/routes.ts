@@ -36,5 +36,5 @@ routes.put("/positions/:id", positionController.update )
 
 const salaryController = new SalaryController()
 routes.post("/salary/",salaryController.create )
-
+routes.put("/salary/:id",salaryController.update )
 export { routes }
